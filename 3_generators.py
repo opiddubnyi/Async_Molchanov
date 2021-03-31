@@ -14,8 +14,11 @@ g2 = gen2(5)
 tasks = [g1, g2]
 
 while tasks:
+    # grab first object
     task = tasks.pop(0)
-
+    # get first generated item and add generator back to the end of the list
+    # since generator will have its state saved we will be getting next()
+    # form each gen alternately
     try:
         i = next(task)
         print(i)
