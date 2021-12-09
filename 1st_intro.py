@@ -20,7 +20,7 @@ server_socket.bind(('localhost', 5001))
 
 # start to listen on this port
 server_socket.listen()
-
+#
 # .accept() and .send() are block-functions that will stop execution until
 #  they're finished handling data - so if we want our server to be able to
 #  work with multiple clients we need to implement async methods
